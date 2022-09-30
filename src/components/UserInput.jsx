@@ -22,6 +22,7 @@ const UserInput = () => {
       <img className="pokemon-logo" src={pokemonLogo} alt="pokemon-logo" />
       <div className="input-and-pikachu">
         <div className="input-name">
+          <form onSubmit={dispatchUserName}>
           <input
             className="input-user"
             type="text"
@@ -29,9 +30,10 @@ const UserInput = () => {
             onChange={(e) => setUserName(e.target.value)}
             placeholder=" Write your name to start"
           />
-          <button className="set-name" onClick={dispatchUserName}>
+          <button className="set-name">
             <i className="fa-solid fa-paper-plane"></i>
           </button>
+          </form>
         </div>
 
         <img className="pikachu" src={pikachu} alt="" />
