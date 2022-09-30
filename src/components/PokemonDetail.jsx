@@ -97,7 +97,7 @@ const PokemonDetail = () => {
               <h3 className="sub-titile">Type</h3>
               <div className="order-type">
                 {pokemonById?.types.map((type) => (
-                  <b className="type">{firstLetter(type.type.name)}</b>
+                  <b className="type" key={type.type.url}>{firstLetter(type.type.name)}</b>
                 ))}
               </div>
             </div>
@@ -106,7 +106,7 @@ const PokemonDetail = () => {
               <h3 className="sub-titile">Abilities </h3>
               <div className="order-abilities">
                 {pokemonById?.abilities.map((ability) => (
-                  <b className="ability" style={{ fontSize: fontSizeType }}>
+                  <b className="ability" style={{ fontSize: fontSizeType }} key={ability.ability.url}>
                     {firstLetter(ability.ability.name)}
                   </b>
                 ))}
@@ -120,7 +120,7 @@ const PokemonDetail = () => {
         <div className="moves">
           <ul>
             {pokemonById?.moves.map((move) => (
-              <li className="move" key={move.id}>
+              <li className="move" key={move.move.url}>
                 {firstLetter(move.move.name)}
               </li>
             ))}
