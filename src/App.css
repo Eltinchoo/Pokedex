@@ -36,19 +36,22 @@ body {
   margin-top: 50px;
 }
 .input-name {
+  box-sizing: border-box;
   margin-top: 50px;
   background-color: #0a285f;
   display: flex;
-  gap: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+ 
+ 
 }
 .input-user {
-  height: 30px;
-  width: 230px;
+  height: 35px;
+  width: 250px;
+  margin-bottom: 5px;
 }
 .user-trainer {
   color: #ffcc00;
@@ -59,6 +62,9 @@ body {
 }
 .set-name {
   background-color: #ffcc00;
+  margin-left: 15px;
+  margin-top:5px;
+  height: 40px;
   border-radius: 10px;
   border: 1.5px solid #0075be;
 }
@@ -68,7 +74,8 @@ body {
   border: 1.5px solid #ffcc00;
 }
 .fa-paper-plane {
-  padding: 5px;
+  
+  padding: 3px;
   color: #0075be;
   font-size: 25px;
 }
@@ -96,7 +103,7 @@ body {
 }
 .search-select-container {
   background: rgb(10, 40, 95);
-  backdrop-filter: blur(6px);
+ 
   border-radius: 20px;
   width: 510px;
   height: 100px;
@@ -111,7 +118,7 @@ body {
   width: 97%;
   height: 90%;
   background: rgba(0, 0, 0, 0.287);
-  backdrop-filter: blur(6px);
+  
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -155,11 +162,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.select-option select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
+
 .select-option select::-ms-expand {
   display: none;
 }
